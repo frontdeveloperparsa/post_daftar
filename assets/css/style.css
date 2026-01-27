@@ -1,0 +1,118 @@
+/* استایل کلی سایت */
+body {
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+    background-color: var(--gray-light);
+    color: var(--text-dark);
+}
+
+h1, h2, h3 {
+    color: #e6f0ff /*var(--primary)*/;
+    font-weight: 700;
+}
+
+
+/* رنگ‌های اصلی */
+:root {
+    --primary: #0066cc;          /* آبی اصلی azki */
+    --primary-dark: #0056b3;
+    --primary-light: #e6f0ff;
+    --success: #28a745;
+    --gray-light: #f8f9fa;
+    --text-dark: #2c3e50;
+}
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* دکمه‌ها */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 50px;          /* گرد مثل azki */
+    padding: 0.75rem 2rem;
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* کارت‌ها و هدرها */
+.card-header {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* سایدبار پنل‌ها */
+.sidebar {
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+    min-height: 100vh;
+    padding: 1.5rem 1rem;
+}
+.sidebar h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.sidebar .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background: rgba(255,255,255,0.15);
+    color: white !important;
+}
+
+/* جدول‌ها */
+.table thead th {
+    background: var(--primary);
+    color: white;
+}
+
+/* فرم‌ها */
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(13,71,161,0.25);
+}
+
+/* صفحه اصلی - هیرو سکشن */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80') center/cover;
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.fab {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  min-width: 220px;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 50px;
+  background: rgba(30, 64, 175, 0.25);
+  backdrop-filter: blur(16px);
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.fab.d-none {
+  display: none !important;
+}
